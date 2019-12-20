@@ -1,2 +1,5 @@
 class Recipe < ApplicationRecord
-end
+    validates :name, presence: true
+    validates :ingredients, presence: true
+    validates :instruction, presence: true
+  end
